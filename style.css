@@ -670,7 +670,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(..//images/select-icon.png);
+  background-image: url(images/select-icon.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
