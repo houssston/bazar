@@ -1,0 +1,12 @@
+.authorize-item:not(:last-child) {
+  margin-right: 20px;
+}
+.authorize__icon {
+  margin-right: 10px;
+}
+.authorize__link {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=authorize-button.css.map */

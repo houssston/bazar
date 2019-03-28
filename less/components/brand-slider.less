@@ -1,0 +1,44 @@
+.brand-slider-item{
+	border: 1px solid #cccccc;
+	margin: 15px;
+	height: 92px;
+}
+.brand-slider__img{
+	margin: 0 auto;
+	transform:translateY(50%);
+}
+.brand-slider{
+	border-top:3px solid #cccccc;
+	border-bottom:3px solid #cccccc;
+	padding:7px 0;
+	.slick-list{
+		max-width: 1040px;
+		margin: 0 auto;			
+	}
+	.slick-arrow{
+		color:#fff;
+		background-color: #2a2a2a;
+		font-size: 21px;	
+		border:none;		
+		padding:36px 12px; 
+		transition: 0.4s ease;
+		transition:0.4s ease;
+		z-index: 1;
+		cursor: pointer;
+		&:hover{
+			color: #e0a38e;
+		}
+	}
+	 .slick-next{
+		position:absolute;
+		bottom: 50%;
+		transform:translateY(50%);
+		right: 0;	
+	}
+	.slick-prev{
+		position:absolute;
+		bottom: 50%;
+		transform:translateY(50%);
+		left: 0;	
+	}
+}

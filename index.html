@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Document</title>	
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="libs/jquery-select/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick-slider/slick.css">	
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<meta name="description" content="">	
+	<script type="text/javascript"></script>	
+</head>
+<body>
+	<header>
+		<section class="header-top">
+			<div class="wrapper">
+				<div class="header-top-container">			
+					<div class="header-select-list">
+						<select class="header-select-item">
+							<option value="usd">USD</option>
+							<option value="eur">EUR</option>
+							<option value="uah">UAH</option>
+							<option value="rub">RUB</option>
+						</select>
+						<select class="header-select-item">
+							<option value="English">English</option>
+							<option value="Russian">Russian</option>						
+							<option value="Ukrainian">Ukrainian</option>
+						</select>
+					</div>
+					<div class="user-panel">
+						<div class="authorize-link">
+							<div class="authorize-item">
+								<a href="#" class="authorize__link"><i class="fas fa-user"></i>Login</a>
+							</div>
+							<div class="authorize-item">
+								<a href="#" class="authorize__link"><i class="fas fa-lock"></i>Register</a>
+							</div>					
+					    </div>
+				    	<button class="user-menu__toggle">				    		
+				    		<span></span>				    				    		   
+				    	</button>				    	
+				    	<div class="user-menu__body">
+				    		<ul class="user-menu">
+				    			<li class="menu-main__item"><a href="#" class="menu-main__link">My Account</a></li>
+				    			<li class="menu-main__item"><a href="#" class="menu-main__link">Wish List</a></li>
+				    			<li class="menu-main__item"><a href="#" class="menu-main__link">Checkout</a></li>
+				    			<li class="menu-main__item"><a href="#" class="menu-main__link">Shopping Cart</a></li>
+				    			<li class="menu-main__item"><a href="#" class="menu-main__link">Log Out</a></li>
+				    		</ul>
+				    	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header-middle">
+			<div class="wrapper">
+				<div class="header-middle-container">
+					<div class="header-phone">
+						<img src="images/phone-icon.png" alt="phone" class="phone__icon">
+						<a href="tel:+1234567890" class="phone__number">2300 - 3560 - 222</a>
+					</div>
+					<div class="header-logo">
+						<a href="#"><img src="images/header-logo.png"></a>
+					</div>
+					<div class="header-basket">
+						<a href="#" class="basket__link"><img src="images/bucket-image.png" class="basket__image">
+							<span class="basket__i-count">5</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="header-menu">
+			<div class="wrapper">
+				<div class="header-nav-container">
+					<div class="header-search">
+						<select class="search-select-list">
+							<option value="default">Select a category</option>
+							<option value="Category 1">Category 1</option>
+							<option value="Category 2">Category 2</option>
+							<option value="Category 3">Category 3</option>
+							<option value="Category 4">Category 4</option>
+						</select>
+						<form class="search-form">						    
+					        <input class="search-form__input" type="text" placeholder="Search products...">
+					        <button class="search-form__button"><i class="fas fa-search"></i></button>
+						</form>
+					</div>
+					<nav class="header-nav">
+						<ul class="nav-list">
+							<li class="nav__item"><a href="#" class="nav__link nav__link-active">home</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">furniture</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">chair</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">table</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">sofa</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">bedroom</a></li>
+							<li class="nav__item"><a href="#" class="nav__link">blog</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</section>
+	</header>
+	<main>
+		<section class="deals-slider">
+			<div class="wrapper">
+				<div class="deals-container">
+					<div class="hot-deals-card">
+						<h3 class="hot-deals__title"><a href="#">Hot Deals</a></h3>
+						<div class="hot-deals__image">
+							<img src="images/deals-image.png">
+							<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							<ul class="hot-deals-timer">
+								<li class="deals-timer-item" id="days"></li>
+								<li class="deals-timer-item" id="hours"></li>
+								<li class="deals-timer-item" id="minutes"></li>
+								<li class="deals-timer-item" id="seconds"></li>
+							</ul>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="fas fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">
+									<li><button><i class="far fa-eye"></i></button></li>
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">
+									<div class="price-old">
+										$350.00
+									</div>
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>
+					</div>
+					<div class="deals-slider-container">
+						<div class="deals-slider-wrapper">
+							<div class="deals-slider__item">
+								<img src="images/hot-item1.jpg" alt="Carousel">
+							</div>
+							<div class="deals-slider__item">
+								<img src="images/hot-item1.jpg" alt="Carousel">
+							</div>
+							<div class="deals-slider__item">
+								<img src="images/hot-item1.jpg" alt="Carousel">
+							</div>
+							<div class="deals-slider__item">
+								<img src="images/hot-item1.jpg" alt="Carousel">
+							</div>
+						</div>
+						<div class="deals-promo">
+							<div class="deals-promo__title">indoor <span class="promo__title-fat">furniture</span></div>
+							<div class="deals-promo__desc">save up to 50% of all furniture</div>
+							<a href="#" class="deals-promo__btn">shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="services">
+			<div class="wrapper">
+				<div class="services-container">
+					<div class="services__item">
+						<div class="services__icon"><i class="fas fa-truck"></i></div>
+						<h3 class="services__title">free Shipping</h3>
+						<h4 class="services__subtitle">all order</h4>
+					</div>
+					<div class="services__item">
+						<div class="services__icon"><i class="fas fa-headphones-alt"></i></div>
+						<h3 class="services__title">24/7 customer</h3>
+						<h4 class="services__subtitle">support</h4>
+					</div>
+					<div class="services__item">
+						<div class="services__icon"><i class="fas fa-reply-all"></i></div>
+						<h3 class="services__title">money back</h3>
+						<h4 class="services__subtitle">guarantee</h4>
+					</div>
+					<div class="services__item">
+						<div class="services__icon"><i class="fas fa-bullhorn"></i></div>
+						<h3 class="services__title">member discount</h3>
+						<h4 class="services__subtitle">first oredr</h4>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="promo">
+			<div class="wrapper">
+				<div class="promo-container">
+					<div class="promo-left">
+						<a href="#"><img src="images/promo-image-big.jpg" class="promo-left__image">	
+							<span class="promo-left__background"></span>
+							<p class="promo-left__title">guest room <br><span class="promo-left__title-fat">sofa</span></p><p class="promo-left__sale"> -20%</p>
+						</a>
+					</div>
+					<div class="promo-right">
+						<div class="promo-right-item">
+							<a href="#"><img src="images/small-image2.png" class="promo-right__image" alt="Office collection">
+							<p class="promo-right__title"><b>office</b> chair <br><span class="promo-right__collection">collection</span></p>
+							<p class="promo-right__price">$200.00</p>
+							</a>
+						</div>
+						<div class="promo-right-item special">
+							<a href="#"><img src="images/small-image1.png" class="promo-right__image" alt="Office collection">
+							<p class="promo-right__title title-special"><b>special</b> collection <br><span class="promo-right__collection collection-special">save up 45% of furniture</span></p>			
+							</a>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</section>
+		<section class="catalog-new-products">
+			<div class="wrapper">
+				<div class="catalog-header">
+					<h2 class="section-title">new furniture</h2>
+					<div class="catalog-menu">
+						<ul class="catalog-menu-list">
+							<li><a href="#Bed" class="catalog-menu__link catalog-link-active">Bed</a></li>
+							<li><a href="#Chair" class="catalog-menu__link">Chair</a></li>
+							<li><a href="#Sofa" class="catalog-menu__link">Sofa</a></li>
+							<li><a href="#Table" class="catalog-menu__link">Table</a></li>
+							<li><a href="#Dining" class="catalog-menu__link">Dining</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="catalog-tab in catalog-tab-active" id="Bed">
+					<div class="catalog-card sale">
+						<div class="catalog-cart__img">
+							<img src="images/catalog-image1.jpg" alt="Bed" width= "260px" height="260px">
+							<div class="catalog-card__btn">	
+								<button class="add-to-cart">Quick View</button>
+								<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							</div>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">									
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">									
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>	
+					</div>
+					<div class="catalog-card sale">
+						<div class="catalog-cart__img">
+							<img src="images/catalog-image1.jpg" alt="Bed" width= "260px" height="260px">
+							<div class="catalog-card__btn">	
+								<button class="add-to-cart">Quick View</button>
+								<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							</div>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">									
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">									
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>	
+					</div>
+					<div class="catalog-card">
+						<div class="catalog-cart__img">
+							<img src="images/catalog-image1.jpg" alt="Bed" width= "260px" height="260px">
+							<div class="catalog-card__btn">	
+								<button class="add-to-cart">Quick View</button>
+								<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							</div>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">									
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">									
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>	
+					</div>
+					<div class="catalog-card">
+						<div class="catalog-cart__img">
+							<img src="images/catalog-image1.jpg" alt="Bed" width= "260px" height="260px">
+							<div class="catalog-card__btn">	
+								<button class="add-to-cart">Quick View</button>
+								<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							</div>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">									
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">									
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>	
+					</div>
+					<div class="catalog-card">
+						<div class="catalog-cart__img">
+							<img src="images/catalog-image1.jpg" alt="Bed" width= "260px" height="260px">
+							<div class="catalog-card__btn">	
+								<button class="add-to-cart">Quick View</button>
+								<button class="add-to-cart uppercase"><img src="images/add-button.png">add to cart</button>
+							</div>
+						</div>
+						<div class="mini-desc">
+							<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+							<div class="product__rating underline-rating">
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+								<span class="far fa-star"></span>
+							</div>
+							<div class="bottom-panel">								
+								<ul class="btn-left__list">									
+									<li><button><i class="far fa-heart"></i></button></li>
+									<li><button><i class="fas fa-exchange-alt"></i></button></li>
+								</ul>								
+								<div class="btn-right">									
+									<button class="price">
+										$300.00
+									</button>
+								</div>
+					        </div>
+						</div>	
+					</div>
+				
+					
+				</div>
+				<div class="catalog-tab" id="Chair" style="color: red">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				<div class="catalog-tab" id="Sofa" style="color: blue">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				<div class="catalog-tab" id="Table" style="color: yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+				<div class="catalog-tab" id="Dining" style="color: green">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			</div>
+		</section>		
+		<section class="furniture-gallery">
+			<div class="wrapper">
+				<div class="gallery-container">
+					<div class="gallery-left">
+						<h2 class="section-title underline-title">furniture gallery</h2>
+						<ul class="gallery-menu">
+							<li><a href="#featured" class="gallery-menu__link ">featured</a></li>
+							<li><a href="#top-seller" class="gallery-menu__link gallery-menu__link-active">top seller</a></li>
+							<li><a href="#sale-off" class="gallery-menu__link">sale off</a></li>
+							<li><a href="#top-rated" class="gallery-menu__link">top rated</a></li>
+						</ul>
+						<div class="gallery-tab" id="featured">							
+						</div>
+						<div class="gallery-tab in gallery-tab-active" id="top-seller">
+							<div class="gallery-slider">
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+									<ul class="gallery-slider__btn">
+										<li><button><i class="far fa-heart "></i>
+										</button> <span class="slider__btn-hover">Add to Wishlist</span></li>
+										<li><button><i class="fas fa-exchange-alt"></i></button><span class="slider__btn-hover">Add To Compare</span></li>
+										<li><button><i class="far fa-eye"></i></button><span class="slider__btn-hover">Quick View</span></li>
+										<li><button><i class="fas fa-shopping-basket"></i></button><span class="slider__btn-hover">Add To Cart</span></li>
+									</ul>
+									<div class="gallery-slider__text">
+										<div class="gallery-slider__price">	
+											<button class="price">
+												$120.00
+											</button>
+											<div class="price-old">
+												$160.00
+											</div>
+										</div>
+										<h4 class="product-name"><a href="#">Aenean Ru Bristique</a></h4>
+										<div class="product__rating">
+											<span class="far fa-star"></span>
+											<span class="far fa-star"></span>
+											<span class="far fa-star"></span>
+											<span class="far fa-star"></span>
+											<span class="far fa-star"></span>
+										</div>
+									</div>
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="gallery-slider__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+							</div>
+							<div class="gallery-slider-nav">
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+								<div class="slider-nav__item">
+									<img src="images/gallery-slider_1.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="gallery-tab" id="sale-off">							
+						</div>
+						<div class="gallery-tab" id="top-rated">							
+						</div>
+					</div>
+					<div class="gallery-right">
+						<img src="images/gall-right_image.png">
+						<div class="gallery-right__text">
+							<div class="gallery-text__price">from <b>$50.80</b></div>
+							<div class="gallery-text__desc">Bedroom Bed</div>
+							<a href="#" class="gallery-text__btn">shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="blog">
+			<div class="wrapper">
+				<h2 class="section-title underline-title">latest blog</h2>
+				<div class="blog-container">
+					<div class="blog-card">						
+                        <a href="#"><img src="images/blog-image1.jpg" alt="Blog image" class="blog__img"></a>
+                        <div class="blog-text">
+                        	<button class="blog__btn">Read More</button>
+                        	<ul class="blog__date">
+	                        	<li><i class="far fa-calendar-alt"></i>15 jan 2016</li>
+	                        	<li><i class="fas fa-comments"></i><a href="#">4 Comments</a></li>
+	                        </ul>   
+	                        <h3 class="blog__title">Products That Fight Static </h3>
+	                        <p class="blog__excerpt">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>	                       
+                        </div>
+					</div>
+					<div class="blog-card">						
+                        <a href="#"><img src="images/blog-image1.jpg" alt="Blog image" class="blog__img"></a>
+                        <div class="blog-text">
+                        	<button class="blog__btn">Read More</button>
+                        	<ul class="blog__date">
+	                        	<li><i class="far fa-calendar-alt"></i>15 jan 2016</li>
+	                        	<li><i class="fas fa-comments"></i><a href="#">4 Comments</a></li>
+	                        </ul>   
+	                        <h3 class="blog__title">Products That Fight Static </h3>
+	                        <p class="blog__excerpt">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>
+                        </div>
+					</div>		
+					<div class="blog-card">						
+                        <a href="#"><img src="images/blog-image1.jpg" alt="Blog image" class="blog__img"></a>
+                        <div class="blog-text">
+                        	 <button class="blog__btn">Read More</button>
+                        	<ul class="blog__date">
+	                        	<li><i class="far fa-calendar-alt"></i>15 jan 2016</li>
+	                        	<li><i class="fas fa-comments"></i><a href="#">4 Comments</a></li>
+	                        </ul>   
+	                        <h3 class="blog__title">Products That Fight Static </h3>
+	                        <p class="blog__excerpt">Aliquam dictum pellentesque nibh sit amet dapibus. Vivamus eget luctus nisi. Nullam euismod leo vehicula, rutrum magna in, ornare enim vehicula, rutrum magna in, ornare enim.</p>	                       
+                        </div>
+					</div>							
+				</div>
+			</div>
+		</section>
+		<section class="brand">
+			<div class="wrapper">
+				<div class="brand-slider">
+					<div class="brand-slider-item"><img src="images/brand-1.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-2.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-3.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-4.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-5.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-6.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-1.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-2.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-3.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-4.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-5.png" class="brand-slider__img"></div>
+					<div class="brand-slider-item"><img src="images/brand-6.png" class="brand-slider__img"></div>
+				</div>
+			</div>
+		</section>
+		<section class="feedback">
+			<div class="wrapper">
+				<h2 class="section-title underline-title">client feedback</h2>
+				<div class="feedback-container">
+					<div class="quote"><i class="fas fa-quote-right"></i></div>
+					<div class="feedback-text">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.</div>
+					<div class="feedback-author">
+						<img src="" class="feedback-author__img">
+						<div class="feedback-author__info">
+							<div class="feedback-author__name">John Smith</div>
+							<div class="feedback__category">Furniture client</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>	
+		<section class="footer-nav">
+			<div class="wrapper">
+				<div class="footer-nav-container">
+					<div class="footer-nav-item">
+						<h3 class="footer-nav__title">information</h3>
+						<ul class="footer-nav__link-list">
+							<li><a href="#" class="footer-nav__link-item">About us</a></li>
+							<li><a href="#" class="footer-nav__link-item">Privacy</a></li>
+							<li><a href="#" class="footer-nav__link-item">Conditions</a></li>
+							<li><a href="#" class="footer-nav__link-item">Online support</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav-item">
+						<h3 class="footer-nav__title">my account</h3>
+						<ul class="footer-nav__link-list">
+							<li><a href="#" class="footer-nav__link-item">About us</a></li>
+							<li><a href="#" class="footer-nav__link-item">Privacy</a></li>
+							<li><a href="#" class="footer-nav__link-item">Conditions</a></li>
+							<li><a href="#" class="footer-nav__link-item">Online support</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav-item">
+						<h3 class="footer-nav__title">information</h3>
+						<ul class="footer-nav__link-list">
+							<li><a href="#" class="footer-nav__link-item">About us</a></li>
+							<li><a href="#" class="footer-nav__link-item">Privacy</a></li>
+							<li><a href="#" class="footer-nav__link-item">Conditions</a></li>
+							<li><a href="#" class="footer-nav__link-item">Online support</a></li>
+						</ul>
+					</div>
+					<div class="footer-nav-item payments">
+						<h3 class="footer-nav__title">orders</h3>
+						<ul class="footer-nav__link-list">
+							<li><a href="#" class="footer-nav__link-item">About us</a></li>
+							<li><a href="#" class="footer-nav__link-item">Privacy</a></li>
+							<li><a href="#" class="footer-nav__link-item">Conditions</a></li>
+							<li><a href="#" class="footer-nav__link-item">Online support</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer-copyright">
+			<div class="wrapper">
+				<div class="footer-copyright-container">
+					<div class="footer-copyright__text">©Copyright 2016 Bazar | All Rights Reserved</div>
+					<ul class="footer-social__link-list">
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-google-plus-g"></i></a></li>
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-invision"></i></a></li>
+						<li><a href="#" class="footer-social__link-item"><i class="fab fa-pinterest-p"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</footer>		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+	<script type="text/javascript" src="libs/jquery-select/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="libs/slick-slider/slick.min.js"></script>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+	<script type="text/javascript" src="scripts/rating.js"></script>
+	<script type="text/javascript" src="scripts/timer.js"></script>
+</body>
+</html>

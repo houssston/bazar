@@ -1,0 +1,18 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.special {
+  background-color: #fbf3f7;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=variables.css.map */

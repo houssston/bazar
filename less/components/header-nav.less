@@ -1,0 +1,27 @@
+.nav-list{
+	display: flex;	
+	justify-content:space-between;
+	flex-wrap: wrap;	
+}
+.nav__item{	
+	text-align: center;
+	width: 50%;
+}
+.nav__link{
+	display: block;
+	padding: 20px 0;/* 33*16 */
+	border-top: 4px solid transparent;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	color: @background-header;
+	transition: 0.4s linear;
+	&:hover{
+		.nav__link-active
+	}
+}
+.nav__link-active{
+	border-top: 4px solid  @background-header;  
+	color:#fff;
+	background:@brand-color;
+}
