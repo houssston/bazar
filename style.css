@@ -670,7 +670,7 @@ body {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: url(images/select-icon.png);
+  background-image: url(..//images/select-icon.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -2074,7 +2074,7 @@ body {
           transform: translate(50%, 150%);
   width: 240px;
   height: 35px;
-  background-image: url(images/card-image.png);
+  background-image: url(../../images/card-image.png);
 }
 .footer-nav__title {
   color: #ffffff;
