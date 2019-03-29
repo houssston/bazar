@@ -2074,7 +2074,7 @@ body {
           transform: translate(50%, 150%);
   width: 240px;
   height: 35px;
-  background-image: url(../../images/card-image.png);
+  background-image: url(images/card-image.png);
 }
 .footer-nav__title {
   color: #ffffff;
